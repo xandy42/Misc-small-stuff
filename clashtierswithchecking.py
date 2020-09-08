@@ -10,7 +10,6 @@ while True:
             toons = 4
         print("\nWhat boss are you facing? (1 for VP, 2 for CFO, 3 for CLO, 4 for CEO)")
         boss = int(input()) #boss selection
-        #print (boss)
         if not boss in range (1,5):
             print("Invalid boss entry detected! Setting to default value of 1 (VP).")#invalid integer for boss, defaults to vp
             boss = 1
@@ -24,14 +23,11 @@ while True:
            suit = int(input())
            if suit in range (1, 9):
                suitarray.append(suit) #entering suit values into array
-               #suitarray[i] = suit
                print("Entered.")
-               #print (i)
-           else: #integer too high or low, defaults to 1 and adds 
+           else: #integer too high or low, sets to default value of 8 
                print("Invalid suit value detected! Setting to default value of 8.")
                suit = 8
                suitarray.append(suit)
-               #i += 1
         break
     except ValueError:
         print("Invalid Input detected! You will need to re-enter all information, starting with number of Toons.")
