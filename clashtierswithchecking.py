@@ -3,7 +3,7 @@ import math
 
 toons = 0
 boss = 0
-suit = 0 
+suit = 0
 print ("Welcome! Enter the number of Toons.")
 toonstring = str(input()) #number of toons entering
 if not toonstring.isnumeric():
